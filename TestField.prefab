@@ -551,6 +551,9 @@ MonoBehaviour:
   startPos: {x: 2.5, y: 1, z: 0}
   moveSpeed: 1
   goalTransform: {fileID: 4843069023000979971}
+  floorRenderer: {fileID: 2042723851261018880}
+  successColor: {fileID: 2100000, guid: 22e2f03019dad8d4790c4a29771841b0, type: 2}
+  failColor: {fileID: 2100000, guid: abdbd938dac1a4a489a63bda038ec0f0, type: 2}
 --- !u!114 &1934846921429634447
 MonoBehaviour:
   m_ObjectHideFlags: 0

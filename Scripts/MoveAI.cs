@@ -12,6 +12,12 @@ public class MoveAI : Agent
 	public float moveSpeed = 1.0f;
 	[SerializeField]
 	private Transform goalTransform;
+	[SerializeField]
+	private MeshRenderer floorRenderer;
+	[SerializeField]
+	private Material successColor;
+	[SerializeField]
+	private Material failColor;
 
 	public override void OnEpisodeBegin() {
 		transform.localPosition = startPos;
@@ -39,12 +45,14 @@ public class MoveAI : Agent
 
 			if(other.transform.tag == "Target") {
 
+				floorRenderer.material = successColor;
 				SetReward(1f);
 				EndEpisode();
 
 			}
 			else if(other.transform.tag == "Wall") {
 
+				floorRenderer.material = failColor;
 				EndEpisode();
 
 			}
