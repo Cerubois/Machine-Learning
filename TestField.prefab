@@ -239,8 +239,8 @@ Transform:
   m_GameObject: {fileID: 3727113175787003360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.23, y: 1, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4537011239744641852}
@@ -547,10 +547,13 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 1000
   startPos: {x: 2.5, y: 1, z: 0}
-  moveSpeed: 1
+  moveSpeed: 2
   goalTransform: {fileID: 4843069023000979971}
+  successMat: {fileID: 2100000, guid: e2486a20e930925478a7d4ce803eaf94, type: 2}
+  failMat: {fileID: 2100000, guid: b4f739f331d012c4998a3977adfb8151, type: 2}
+  floorRenderer: {fileID: 2042723851261018880}
 --- !u!114 &1934846921429634447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +576,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: ec6c07baa249ee54494095a0958c06f4, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: MoveToGoal
