@@ -20,7 +20,8 @@ public class MoveAI : Agent
 	private MeshRenderer floorRenderer;
 
 	public override void OnEpisodeBegin() {
-		transform.localPosition = startPos;
+		transform.localPosition = startPos + new Vector3(Random.Range(-1, 1), 0, Random.Range(-3, 3));
+		goalTransform.localPosition = new Vector3(-1.5f,1,0) + new Vector3(Random.Range(-1, 1), 0, Random.Range(-3, 3));
 	}
 
 	public override void CollectObservations(VectorSensor sensor) {
